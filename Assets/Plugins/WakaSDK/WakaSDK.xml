@@ -1,0 +1,3182 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WakaSDK</name>
+    </assembly>
+    <members>
+        <member name="T:WakaProto.WakaReflection">
+            <summary>Holder for reflection information generated from waka.proto</summary>
+        </member>
+        <member name="P:WakaProto.WakaReflection.Descriptor">
+            <summary>File descriptor for waka.proto</summary>
+        </member>
+        <member name="T:WakaProto.Heart">
+            <summary>
+            心跳
+            </summary>
+        </member>
+        <member name="T:WakaProto.Transport">
+            <summary>
+            传输
+            </summary>
+        </member>
+        <member name="F:WakaProto.Transport.IdFieldNumber">
+            <summary>Field number for the "id" field.</summary>
+        </member>
+        <member name="P:WakaProto.Transport.Id">
+            <summary>
+            消息 ID
+            </summary>
+        </member>
+        <member name="F:WakaProto.Transport.PayloadFieldNumber">
+            <summary>Field number for the "payload" field.</summary>
+        </member>
+        <member name="P:WakaProto.Transport.Payload">
+            <summary>
+            负载
+            </summary>
+        </member>
+        <member name="T:WakaProto.FutureRequest">
+            <summary>
+            RPC 请求
+            </summary>
+        </member>
+        <member name="F:WakaProto.FutureRequest.IdFieldNumber">
+            <summary>Field number for the "id" field.</summary>
+        </member>
+        <member name="P:WakaProto.FutureRequest.Id">
+            <summary>
+            消息 ID
+            </summary>
+        </member>
+        <member name="F:WakaProto.FutureRequest.PayloadFieldNumber">
+            <summary>Field number for the "payload" field.</summary>
+        </member>
+        <member name="P:WakaProto.FutureRequest.Payload">
+            <summary>
+            负载
+            </summary>
+        </member>
+        <member name="F:WakaProto.FutureRequest.NumberFieldNumber">
+            <summary>Field number for the "number" field.</summary>
+        </member>
+        <member name="P:WakaProto.FutureRequest.Number">
+            <summary>
+            请求序列号
+            </summary>
+        </member>
+        <member name="T:WakaProto.FutureResponse">
+            <summary>
+            RPC 响应
+            </summary>
+        </member>
+        <member name="F:WakaProto.FutureResponse.StatusFieldNumber">
+            <summary>Field number for the "status" field.</summary>
+        </member>
+        <member name="P:WakaProto.FutureResponse.Status">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="F:WakaProto.FutureResponse.IdFieldNumber">
+            <summary>Field number for the "id" field.</summary>
+        </member>
+        <member name="P:WakaProto.FutureResponse.Id">
+            <summary>
+            消息 ID
+            </summary>
+        </member>
+        <member name="F:WakaProto.FutureResponse.PayloadFieldNumber">
+            <summary>Field number for the "payload" field.</summary>
+        </member>
+        <member name="P:WakaProto.FutureResponse.Payload">
+            <summary>
+            负载
+            </summary>
+        </member>
+        <member name="F:WakaProto.FutureResponse.NumberFieldNumber">
+            <summary>Field number for the "number" field.</summary>
+        </member>
+        <member name="P:WakaProto.FutureResponse.Number">
+            <summary>
+            请求序列号
+            </summary>
+        </member>
+        <member name="T:WakaProto.WakaProtoMetaProvider">
+            <summary>
+            waka.proto 元数据提供者
+            </summary>
+        </member>
+        <member name="M:WakaProto.WakaProtoMetaProvider.RegisterAll">
+            <summary>
+            注册消息
+            </summary>
+        </member>
+        <member name="T:CowProto.CowReflection">
+            <summary>Holder for reflection information generated from cow.proto</summary>
+        </member>
+        <member name="P:CowProto.CowReflection.Descriptor">
+            <summary>File descriptor for cow.proto</summary>
+        </member>
+        <member name="T:CowProto.PlayerMask">
+            <summary>
+            玩家信息掩码
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuRoomType">
+            <summary>
+            @comments 房间类型
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoomType.Order">
+            <summary>
+            约战
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoomType.PayForAnother">
+            <summary>
+            代开
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoomType.Flowing">
+            <summary>
+            流水
+            </summary>
+        </member>
+        <member name="T:CowProto.Welcome">
+            <summary>
+            @comments 推送信息
+            @receive
+            </summary>
+        </member>
+        <member name="F:CowProto.Welcome.CustomersFieldNumber">
+            <summary>Field number for the "customers" field.</summary>
+        </member>
+        <member name="P:CowProto.Welcome.Customers">
+            <summary>
+            客服信息
+            </summary>
+        </member>
+        <member name="F:CowProto.Welcome.ExtsFieldNumber">
+            <summary>Field number for the "exts" field.</summary>
+        </member>
+        <member name="P:CowProto.Welcome.Exts">
+            <summary>
+            附加配置
+            ios          ios 审核中 [true, false]
+            ver          版本号 [x.x.x]
+            </summary>
+        </member>
+        <member name="F:CowProto.Welcome.UrlsFieldNumber">
+            <summary>Field number for the "urls" field.</summary>
+        </member>
+        <member name="P:CowProto.Welcome.Urls">
+            <summary>
+            链接
+            recharge                 充值链接
+            ios_download             iOS 下载链接
+            android_download         Android 下载链接
+            </summary>
+        </member>
+        <member name="F:CowProto.Welcome.NoticesFieldNumber">
+            <summary>Field number for the "notices" field.</summary>
+        </member>
+        <member name="P:CowProto.Welcome.Notices">
+            <summary>
+            公告
+            gapp         健康游戏公告
+            cow_roll     牛牛滚动公告
+            </summary>
+        </member>
+        <member name="T:CowProto.Welcome.Types">
+            <summary>Container for nested types declared in the Welcome message type.</summary>
+        </member>
+        <member name="T:CowProto.Welcome.Types.Customer">
+            <summary>
+            客服信息
+            </summary>
+        </member>
+        <member name="F:CowProto.Welcome.Types.Customer.NameFieldNumber">
+            <summary>Field number for the "name" field.</summary>
+        </member>
+        <member name="F:CowProto.Welcome.Types.Customer.WechatFieldNumber">
+            <summary>Field number for the "wechat" field.</summary>
+        </member>
+        <member name="T:CowProto.WechatLogin">
+            <summary>
+            @comments 微信登录请求
+            @post
+            </summary>
+        </member>
+        <member name="F:CowProto.WechatLogin.WechatUidFieldNumber">
+            <summary>Field number for the "wechat_uid" field.</summary>
+        </member>
+        <member name="P:CowProto.WechatLogin.WechatUid">
+            <summary>
+            微信UID
+            </summary>
+        </member>
+        <member name="F:CowProto.WechatLogin.NicknameFieldNumber">
+            <summary>Field number for the "nickname" field.</summary>
+        </member>
+        <member name="P:CowProto.WechatLogin.Nickname">
+            <summary>
+            昵称
+            </summary>
+        </member>
+        <member name="F:CowProto.WechatLogin.HeadFieldNumber">
+            <summary>Field number for the "head" field.</summary>
+        </member>
+        <member name="P:CowProto.WechatLogin.Head">
+            <summary>
+            头像URL
+            </summary>
+        </member>
+        <member name="T:CowProto.TokenLogin">
+            <summary>
+            @comments 令牌登录请求
+            @post
+            </summary>
+        </member>
+        <member name="F:CowProto.TokenLogin.TokenFieldNumber">
+            <summary>Field number for the "token" field.</summary>
+        </member>
+        <member name="P:CowProto.TokenLogin.Token">
+            <summary>
+            令牌
+            </summary>
+        </member>
+        <member name="T:CowProto.LoginFailed">
+            <summary>
+            @comments 登录失败
+            @receive
+            </summary>
+        </member>
+        <member name="F:CowProto.LoginFailed.ReasonFieldNumber">
+            <summary>Field number for the "reason" field.</summary>
+        </member>
+        <member name="P:CowProto.LoginFailed.Reason">
+            <summary>
+            原因
+            0 未知
+            1 无效 Token
+            </summary>
+        </member>
+        <member name="T:CowProto.LoginSuccess">
+            <summary>
+            @comments 登录成功
+            @receive
+            </summary>
+        </member>
+        <member name="F:CowProto.LoginSuccess.TokenFieldNumber">
+            <summary>Field number for the "token" field.</summary>
+        </member>
+        <member name="P:CowProto.LoginSuccess.Token">
+            <summary>
+            登录令牌
+            </summary>
+        </member>
+        <member name="T:CowProto.SetPlayerExtRequest">
+            <summary>
+            @comments 设置玩家附加信息请求
+            @rpc response=SetPlayerExtResponse
+            </summary>
+        </member>
+        <member name="F:CowProto.SetPlayerExtRequest.WechatFieldNumber">
+            <summary>Field number for the "wechat" field.</summary>
+        </member>
+        <member name="P:CowProto.SetPlayerExtRequest.Wechat">
+            <summary>
+            微信ID
+            </summary>
+        </member>
+        <member name="F:CowProto.SetPlayerExtRequest.IdcardFieldNumber">
+            <summary>Field number for the "idcard" field.</summary>
+        </member>
+        <member name="P:CowProto.SetPlayerExtRequest.Idcard">
+            <summary>
+            身份证
+            </summary>
+        </member>
+        <member name="F:CowProto.SetPlayerExtRequest.NameFieldNumber">
+            <summary>Field number for the "name" field.</summary>
+        </member>
+        <member name="P:CowProto.SetPlayerExtRequest.Name">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="T:CowProto.SetPlayerExtResponse">
+            <summary>
+            @comments 设置玩家附加信息结果
+            </summary>
+        </member>
+        <member name="T:CowProto.SetPlayerSupervisorRequest">
+            <summary>
+            @comments 设置上级代理
+            @rpc response=SetPlayerSupervisorResponse
+            </summary>
+        </member>
+        <member name="F:CowProto.SetPlayerSupervisorRequest.PlayerIdFieldNumber">
+            <summary>Field number for the "player_id" field.</summary>
+        </member>
+        <member name="P:CowProto.SetPlayerSupervisorRequest.PlayerId">
+            <summary>
+            上级代理 ID
+            </summary>
+        </member>
+        <member name="T:CowProto.SetPlayerSupervisorResponse">
+            <summary>
+            @comments 设置上级代理结果
+            </summary>
+        </member>
+        <member name="T:CowProto.Player">
+            <summary>
+            @comment 玩家公开信息
+            </summary>
+        </member>
+        <member name="F:CowProto.Player.IdFieldNumber">
+            <summary>Field number for the "id" field.</summary>
+        </member>
+        <member name="P:CowProto.Player.Id">
+            <summary>
+            玩家 ID
+            </summary>
+        </member>
+        <member name="F:CowProto.Player.NicknameFieldNumber">
+            <summary>Field number for the "nickname" field.</summary>
+        </member>
+        <member name="P:CowProto.Player.Nickname">
+            <summary>
+            昵称
+            </summary>
+        </member>
+        <member name="F:CowProto.Player.HeadFieldNumber">
+            <summary>Field number for the "head" field.</summary>
+        </member>
+        <member name="P:CowProto.Player.Head">
+            <summary>
+            头像
+            </summary>
+        </member>
+        <member name="F:CowProto.Player.MoneyFieldNumber">
+            <summary>Field number for the "money" field.</summary>
+        </member>
+        <member name="P:CowProto.Player.Money">
+            <summary>
+            金币
+            </summary>
+        </member>
+        <member name="F:CowProto.Player.VipFieldNumber">
+            <summary>Field number for the "vip" field.</summary>
+        </member>
+        <member name="P:CowProto.Player.Vip">
+            <summary>
+            VIP
+            </summary>
+        </member>
+        <member name="F:CowProto.Player.WechatFieldNumber">
+            <summary>Field number for the "wechat" field.</summary>
+        </member>
+        <member name="P:CowProto.Player.Wechat">
+            <summary>
+            微信号
+            </summary>
+        </member>
+        <member name="F:CowProto.Player.IpFieldNumber">
+            <summary>Field number for the "ip" field.</summary>
+        </member>
+        <member name="P:CowProto.Player.Ip">
+            <summary>
+            登录IP
+            </summary>
+        </member>
+        <member name="T:CowProto.PlayerSecret">
+            <summary>
+            @comments 玩家
+            </summary>
+        </member>
+        <member name="F:CowProto.PlayerSecret.IdFieldNumber">
+            <summary>Field number for the "id" field.</summary>
+        </member>
+        <member name="P:CowProto.PlayerSecret.Id">
+            <summary>
+            玩家主键
+            </summary>
+        </member>
+        <member name="F:CowProto.PlayerSecret.CreatedAtFieldNumber">
+            <summary>Field number for the "created_at" field.</summary>
+        </member>
+        <member name="P:CowProto.PlayerSecret.CreatedAt">
+            <summary>
+            注册时间
+            </summary>
+        </member>
+        <member name="F:CowProto.PlayerSecret.WechatUidFieldNumber">
+            <summary>Field number for the "wechat_uid" field.</summary>
+        </member>
+        <member name="P:CowProto.PlayerSecret.WechatUid">
+            <summary>
+            微信UID
+            </summary>
+        </member>
+        <member name="F:CowProto.PlayerSecret.NicknameFieldNumber">
+            <summary>Field number for the "nickname" field.</summary>
+        </member>
+        <member name="P:CowProto.PlayerSecret.Nickname">
+            <summary>
+            昵称
+            </summary>
+        </member>
+        <member name="F:CowProto.PlayerSecret.HeadFieldNumber">
+            <summary>Field number for the "head" field.</summary>
+        </member>
+        <member name="P:CowProto.PlayerSecret.Head">
+            <summary>
+            头像
+            </summary>
+        </member>
+        <member name="F:CowProto.PlayerSecret.MoneyFieldNumber">
+            <summary>Field number for the "money" field.</summary>
+        </member>
+        <member name="P:CowProto.PlayerSecret.Money">
+            <summary>
+            金币
+            </summary>
+        </member>
+        <member name="F:CowProto.PlayerSecret.VipFieldNumber">
+            <summary>Field number for the "vip" field.</summary>
+        </member>
+        <member name="P:CowProto.PlayerSecret.Vip">
+            <summary>
+            VIP
+            </summary>
+        </member>
+        <member name="F:CowProto.PlayerSecret.WechatFieldNumber">
+            <summary>Field number for the "wechat" field.</summary>
+        </member>
+        <member name="P:CowProto.PlayerSecret.Wechat">
+            <summary>
+            微信号
+            </summary>
+        </member>
+        <member name="F:CowProto.PlayerSecret.IdcardFieldNumber">
+            <summary>Field number for the "idcard" field.</summary>
+        </member>
+        <member name="P:CowProto.PlayerSecret.Idcard">
+            <summary>
+            身份证
+            </summary>
+        </member>
+        <member name="F:CowProto.PlayerSecret.NameFieldNumber">
+            <summary>Field number for the "name" field.</summary>
+        </member>
+        <member name="P:CowProto.PlayerSecret.Name">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="F:CowProto.PlayerSecret.SupervisorFieldNumber">
+            <summary>Field number for the "supervisor" field.</summary>
+        </member>
+        <member name="P:CowProto.PlayerSecret.Supervisor">
+            <summary>
+            上级代理
+            </summary>
+        </member>
+        <member name="F:CowProto.PlayerSecret.IpFieldNumber">
+            <summary>Field number for the "ip" field.</summary>
+        </member>
+        <member name="P:CowProto.PlayerSecret.Ip">
+            <summary>
+            登录IP
+            </summary>
+        </member>
+        <member name="T:CowProto.GetMyRequest">
+            <summary>
+            @comments 拉取账号信息
+            @rpc response=GetMyResponse
+            </summary>
+        </member>
+        <member name="F:CowProto.GetMyRequest.MaskFieldNumber">
+            <summary>Field number for the "mask" field.</summary>
+        </member>
+        <member name="P:CowProto.GetMyRequest.Mask">
+            <summary>
+            掩码
+            </summary>
+        </member>
+        <member name="T:CowProto.GetMyResponse">
+            <summary>
+            @comments 拉取账号信息结果
+            </summary>
+        </member>
+        <member name="F:CowProto.GetMyResponse.PlayerFieldNumber">
+            <summary>Field number for the "player" field.</summary>
+        </member>
+        <member name="P:CowProto.GetMyResponse.Player">
+            <summary>
+            账号信息
+            </summary>
+        </member>
+        <member name="T:CowProto.GetPlayerRequest">
+            <summary>
+            @comments 拉取玩家公开信息
+            @rpc response=GetPlayerResponse
+            </summary>
+        </member>
+        <member name="F:CowProto.GetPlayerRequest.PlayerIdFieldNumber">
+            <summary>Field number for the "player_id" field.</summary>
+        </member>
+        <member name="P:CowProto.GetPlayerRequest.PlayerId">
+            <summary>
+            玩家 ID
+            </summary>
+        </member>
+        <member name="F:CowProto.GetPlayerRequest.MaskFieldNumber">
+            <summary>Field number for the "mask" field.</summary>
+        </member>
+        <member name="P:CowProto.GetPlayerRequest.Mask">
+            <summary>
+            要获取的信息
+            </summary>
+        </member>
+        <member name="T:CowProto.GetPlayerResponse">
+            <summary>
+            @comments 拉取玩家公开信息结果
+            </summary>
+        </member>
+        <member name="F:CowProto.GetPlayerResponse.PlayerFieldNumber">
+            <summary>Field number for the "player" field.</summary>
+        </member>
+        <member name="P:CowProto.GetPlayerResponse.Player">
+            <summary>
+            玩家信息
+            </summary>
+        </member>
+        <member name="T:CowProto.HallEntered">
+            <summary>
+            @comments 已经进入大厅
+            @receive
+            </summary>
+        </member>
+        <member name="T:CowProto.PlayerNumber">
+            <summary>
+            @comments 在线人数
+            @receive
+            </summary>
+        </member>
+        <member name="F:CowProto.PlayerNumber.NumberFieldNumber">
+            <summary>Field number for the "number" field.</summary>
+        </member>
+        <member name="P:CowProto.PlayerNumber.Number">
+            <summary>
+            人数
+            </summary>
+        </member>
+        <member name="T:CowProto.Recover">
+            <summary>
+            @comments 是否需要恢复游戏
+            @receive
+            </summary>
+        </member>
+        <member name="F:CowProto.Recover.IsFieldNumber">
+            <summary>Field number for the "is" field.</summary>
+        </member>
+        <member name="P:CowProto.Recover.Is">
+            <summary>
+            是否需要恢复
+            </summary>
+        </member>
+        <member name="F:CowProto.Recover.NameFieldNumber">
+            <summary>Field number for the "name" field.</summary>
+        </member>
+        <member name="P:CowProto.Recover.Name">
+            <summary>
+            游戏名称
+            cow          牛牛
+            red          红包
+            lever28      二八杠
+            gomoku       五子棋
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuRoomOption">
+            <summary>
+            @comments 房间配置
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoomOption.BankerFieldNumber">
+            <summary>Field number for the "banker" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuRoomOption.Banker">
+            <summary>
+            庄家模式
+            0 定庄
+            1 轮庄
+            2 抢庄
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoomOption.GamesFieldNumber">
+            <summary>Field number for the "games" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuRoomOption.Games">
+            <summary>
+            局数
+            20 30 40
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoomOption.ModeFieldNumber">
+            <summary>Field number for the "mode" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuRoomOption.Mode">
+            <summary>
+            模式
+            0 普通
+            1 疯狂
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoomOption.ScoreFieldNumber">
+            <summary>Field number for the "score" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuRoomOption.Score">
+            <summary>
+            底分
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuRoomData">
+            <summary>
+            @comments 房间
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoomData.TypeFieldNumber">
+            <summary>Field number for the "type" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuRoomData.Type">
+            <summary>
+            房间类型
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoomData.RoomIdFieldNumber">
+            <summary>Field number for the "room_id" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuRoomData.RoomId">
+            <summary>
+            房间号
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoomData.OptionFieldNumber">
+            <summary>Field number for the "option" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuRoomData.Option">
+            <summary>
+            房间配置
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoomData.CreatorFieldNumber">
+            <summary>Field number for the "creator" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuRoomData.Creator">
+            <summary>
+            创建者
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoomData.OwnerFieldNumber">
+            <summary>Field number for the "owner" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuRoomData.Owner">
+            <summary>
+            房主
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoomData.PlayersFieldNumber">
+            <summary>Field number for the "players" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuRoomData.Players">
+            <summary>
+            房间玩家
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoomData.JoinMoneyFieldNumber">
+            <summary>Field number for the "join_money" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuRoomData.JoinMoney">
+            <summary>
+            入场限制
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoomData.GamingFieldNumber">
+            <summary>Field number for the "gaming" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuRoomData.Gaming">
+            <summary>
+            是否游戏中
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuRoomData.Types">
+            <summary>Container for nested types declared in the NiuniuRoomData message type.</summary>
+        </member>
+        <member name="T:CowProto.NiuniuRoomData.Types.PlayerData">
+            <summary>
+            房间玩家
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoomData.Types.PlayerData.PlayerFieldNumber">
+            <summary>Field number for the "player" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuRoomData.Types.PlayerData.Player">
+            <summary>
+            玩家
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoomData.Types.PlayerData.PosFieldNumber">
+            <summary>Field number for the "pos" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuRoomData.Types.PlayerData.Pos">
+            <summary>
+            位置
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoomData.Types.PlayerData.ReadyFieldNumber">
+            <summary>Field number for the "ready" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuRoomData.Types.PlayerData.Ready">
+            <summary>
+            是否准备
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoomData.Types.PlayerData.LostFieldNumber">
+            <summary>Field number for the "lost" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuRoomData.Types.PlayerData.Lost">
+            <summary>
+            是否断线
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuQueryPayForAnotherRoomListRequest">
+            <summary>
+            @comments 查询代开房间
+            @rpc response=NiuniuQueryPayForAnotherRoomListResponse
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuQueryPayForAnotherRoomListResponse">
+            <summary>
+            @comments 查询代开房间结果
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuQueryPayForAnotherRoomListResponse.RoomsFieldNumber">
+            <summary>Field number for the "rooms" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuQueryPayForAnotherRoomListResponse.Rooms">
+            <summary>
+            房间
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuQueryFlowingRoomListRequest">
+            <summary>
+            @comments 查询流水房间
+            @rpc response=NiuniuQueryFlowingRoomListResponse
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuQueryFlowingRoomListResponse">
+            <summary>
+            @comments 查询流水房间结果
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuQueryFlowingRoomListResponse.RoomsFieldNumber">
+            <summary>Field number for the "rooms" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuQueryFlowingRoomListResponse.Rooms">
+            <summary>
+            房间
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuHistory">
+            <summary>
+            @comments 牛牛战绩
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuHistory.TypeFieldNumber">
+            <summary>Field number for the "type" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuHistory.Type">
+            <summary>
+            房间类型
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuHistory.RoomIdFieldNumber">
+            <summary>Field number for the "room_id" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuHistory.RoomId">
+            <summary>
+            房间 ID
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuHistory.PlayersFieldNumber">
+            <summary>Field number for the "players" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuHistory.Players">
+            <summary>
+            记录
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuHistory.CreatedAtFieldNumber">
+            <summary>Field number for the "created_at" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuHistory.CreatedAt">
+            <summary>
+            时间
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuHistory.Types">
+            <summary>Container for nested types declared in the NiuniuHistory message type.</summary>
+        </member>
+        <member name="T:CowProto.NiuniuHistory.Types.PlayerData">
+            <summary>
+            玩家
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuHistory.Types.PlayerData.IdFieldNumber">
+            <summary>Field number for the "id" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuHistory.Types.PlayerData.Id">
+            <summary>
+            玩家 ID
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuHistory.Types.PlayerData.PointsFieldNumber">
+            <summary>Field number for the "points" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuHistory.Types.PlayerData.Points">
+            <summary>
+            得分
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuHistory.Types.PlayerData.VictoriesFieldNumber">
+            <summary>Field number for the "victories" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuHistory.Types.PlayerData.Victories">
+            <summary>
+            胜利场数
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuQueryHistoryRequest">
+            <summary>
+            @comments 查询战绩
+            @rpc response=NiuniuQueryHistoryResponse
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuQueryHistoryResponse">
+            <summary>
+            @comments 查询战绩结果
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuQueryHistoryResponse.HistoriesFieldNumber">
+            <summary>Field number for the "histories" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuQueryHistoryResponse.Histories">
+            <summary>
+            牛牛战绩
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuCreateRoom">
+            <summary>
+            @comments 创建房间
+            @post
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuCreateRoom.TypeFieldNumber">
+            <summary>Field number for the "type" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuCreateRoom.Type">
+            <summary>
+            模式
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuCreateRoom.OptionFieldNumber">
+            <summary>Field number for the "option" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuCreateRoom.Option">
+            <summary>
+            房间配置
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuCreateRoomFailed">
+            <summary>
+            @comments 创建房间失败
+            @receive
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuCreateRoomFailed.ReasonFieldNumber">
+            <summary>Field number for the "reason" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuCreateRoomFailed.Reason">
+            <summary>
+            原因
+             0 未知
+             1 金币不足
+             2 游戏已开始
+            -1 玩家已进入房间
+            -2 非合法的配置
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuCreateRoomSuccess">
+            <summary>
+            @comments 房间被创建
+            @receive
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuCreateRoomSuccess.RoomIdFieldNumber">
+            <summary>Field number for the "room_id" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuCreateRoomSuccess.RoomId">
+            <summary>
+            房间号
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuJoinRoom">
+            <summary>
+            @comments 加入房间
+            @post
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuJoinRoom.RoomIdFieldNumber">
+            <summary>Field number for the "room_id" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuJoinRoom.RoomId">
+            <summary>
+            房间号
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuJoinRoomFailed">
+            <summary>
+            @comments 加入房间失败
+            @receive
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuJoinRoomFailed.ReasonFieldNumber">
+            <summary>Field number for the "reason" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuJoinRoomFailed.Reason">
+            <summary>
+            原因
+             0 未知
+             1 房间不存在
+             2 金币不足
+             3 房间已满员
+            -1 玩家已进入房间
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuJoinRoomSuccess">
+            <summary>
+            @comments 已加入房间
+            @receive
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuDismiss">
+            <summary>
+            @comments 解散房间
+            @post
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuDismiss.RoomIdFieldNumber">
+            <summary>Field number for the "room_id" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuDismiss.RoomId">
+            <summary>
+            房间号
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuLeaveRoom">
+            <summary>
+            @comments 请求离开房间
+            @post
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuLeftRoom">
+            <summary>
+            @comments 离开了房间
+            @receive
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuLeftRoom.ReasonFieldNumber">
+            <summary>Field number for the "reason" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuLeftRoom.Reason">
+            <summary>
+            原因
+            0 未知
+            1 正常离开
+            2 解散
+            3 金币不足
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuUpdateRoom">
+            <summary>
+            @comments 房间状态更新
+            @receive
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuUpdateRoom.RoomFieldNumber">
+            <summary>Field number for the "room" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuUpdateRoom.Room">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuSwitchReady">
+            <summary>
+            @comments 切换准备/取消
+            @post
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuStart">
+            <summary>
+            @comments 开始游戏
+            @post
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuGameStarted">
+            <summary>
+            @comments 游戏开始
+            @receive
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuRoundStarted">
+            <summary>
+            @comments 回合开始
+            @receive
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoundStarted.RoundNumberFieldNumber">
+            <summary>Field number for the "round_number" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuRoundStarted.RoundNumber">
+            <summary>
+            回合数
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuDeadline">
+            <summary>
+            @comments 操作结束时间
+            @receive
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuDeadline.StampFieldNumber">
+            <summary>Field number for the "stamp" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuDeadline.Stamp">
+            <summary>
+            时间戳
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuContinueWith">
+            <summary>
+            @comments 继续
+            @post
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuRoundStatus">
+            <summary>
+            @comments 游戏状态
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoundStatus.StepFieldNumber">
+            <summary>Field number for the "step" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuRoundStatus.Step">
+            <summary>
+            阶段
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoundStatus.RoundNumberFieldNumber">
+            <summary>Field number for the "round_number" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuRoundStatus.RoundNumber">
+            <summary>
+            局数
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoundStatus.BankerFieldNumber">
+            <summary>Field number for the "banker" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuRoundStatus.Banker">
+            <summary>
+            庄家
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoundStatus.PlayersFieldNumber">
+            <summary>Field number for the "players" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuRoundStatus.Players">
+            <summary>
+            玩家数据
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoundStatus.PokersFieldNumber">
+            <summary>Field number for the "pokers" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuRoundStatus.Pokers">
+            <summary>
+            手牌
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuRoundStatus.Types">
+            <summary>Container for nested types declared in the NiuniuRoundStatus message type.</summary>
+        </member>
+        <member name="T:CowProto.NiuniuRoundStatus.Types.RoundStep">
+            <summary>
+            游戏阶段
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoundStatus.Types.RoundStep.Idle">
+            <summary>
+            空闲
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoundStatus.Types.RoundStep.SpecifyBanker">
+            <summary>
+            选择庄家
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoundStatus.Types.RoundStep.Grab">
+            <summary>
+            抢庄
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoundStatus.Types.RoundStep.GrabShow">
+            <summary>
+            抢庄动画
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoundStatus.Types.RoundStep.SpecifyRate">
+            <summary>
+            选择倍率
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoundStatus.Types.RoundStep.CommitPokers">
+            <summary>
+            配牌
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoundStatus.Types.RoundStep.RoundClear">
+            <summary>
+            小局结算
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoundStatus.Types.RoundStep.GameFinally">
+            <summary>
+            游戏结算
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuRoundStatus.Types.PlayerData">
+            <summary>
+            玩家游戏数据
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoundStatus.Types.PlayerData.IdFieldNumber">
+            <summary>Field number for the "id" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuRoundStatus.Types.PlayerData.Id">
+            <summary>
+            玩家 ID
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoundStatus.Types.PlayerData.PointsFieldNumber">
+            <summary>Field number for the "points" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuRoundStatus.Types.PlayerData.Points">
+            <summary>
+            积分
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoundStatus.Types.PlayerData.GrabFieldNumber">
+            <summary>Field number for the "grab" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuRoundStatus.Types.PlayerData.Grab">
+            <summary>
+            是否抢庄
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoundStatus.Types.PlayerData.RateFieldNumber">
+            <summary>Field number for the "rate" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuRoundStatus.Types.PlayerData.Rate">
+            <summary>
+            倍率
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoundStatus.Types.PlayerData.GrabCommittedFieldNumber">
+            <summary>Field number for the "grab_committed" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuRoundStatus.Types.PlayerData.GrabCommitted">
+            <summary>
+            已选择是否抢庄
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoundStatus.Types.PlayerData.RateCommittedFieldNumber">
+            <summary>Field number for the "rate_committed" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuRoundStatus.Types.PlayerData.RateCommitted">
+            <summary>
+            已选择倍率
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoundStatus.Types.PlayerData.PokersCommittedFieldNumber">
+            <summary>Field number for the "pokers_committed" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuRoundStatus.Types.PlayerData.PokersCommitted">
+            <summary>
+            已配牌
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuUpdateRound">
+            <summary>
+            @comments 游戏状态更新
+            @receive
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuUpdateRound.RoundFieldNumber">
+            <summary>Field number for the "round" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuUpdateRound.Round">
+            <summary>
+            游戏状态
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuRequireSpecifyBanker">
+            <summary>
+            @comments 要求选择庄家
+            @receive
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRequireSpecifyBanker.IsFieldNumber">
+            <summary>Field number for the "is" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuRequireSpecifyBanker.Is">
+            <summary>
+            是否是自己操作
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuSpecifyBanker">
+            <summary>
+            @comments 选择庄家
+            @post
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuSpecifyBanker.BankerFieldNumber">
+            <summary>Field number for the "banker" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuSpecifyBanker.Banker">
+            <summary>
+            指定的庄家 ID
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuRequireGrab">
+            <summary>
+            @comments 要求抢庄
+            @receive
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuGrab">
+            <summary>
+            @comments 抢庄
+            @post
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuGrab.DoingFieldNumber">
+            <summary>Field number for the "doing" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuGrab.Doing">
+            <summary>
+            是否抢庄
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuRequireGrabShow">
+            <summary>
+            @comments 要求播放抢庄动画
+            @receive
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRequireGrabShow.PlayersFieldNumber">
+            <summary>Field number for the "players" field.</summary>
+        </member>
+        <member name="T:CowProto.NiuniuRequireGrabShow.Types">
+            <summary>Container for nested types declared in the NiuniuRequireGrabShow message type.</summary>
+        </member>
+        <member name="T:CowProto.NiuniuRequireGrabShow.Types.PlayerData">
+            <summary>
+            玩家
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRequireGrabShow.Types.PlayerData.PlayerFieldNumber">
+            <summary>Field number for the "player" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuRequireGrabShow.Types.PlayerData.Player">
+            <summary>
+            玩家 ID
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRequireGrabShow.Types.PlayerData.GrabFieldNumber">
+            <summary>Field number for the "grab" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuRequireGrabShow.Types.PlayerData.Grab">
+            <summary>
+            是否抢庄
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuDeal4">
+            <summary>
+            @comments 发牌4
+            @receive
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuDeal4.PokersFieldNumber">
+            <summary>Field number for the "pokers" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuDeal4.Pokers">
+            <summary>
+            牌
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuRequireSpecifyRate">
+            <summary>
+            @comments 要求闲家选择倍率
+            @receive
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRequireSpecifyRate.IsFieldNumber">
+            <summary>Field number for the "is" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuRequireSpecifyRate.Is">
+            <summary>
+            是否是自己操作
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuSpecifyRate">
+            <summary>
+            @comments 闲家选择倍率
+            @post
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuSpecifyRate.RateFieldNumber">
+            <summary>Field number for the "rate" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuSpecifyRate.Rate">
+            <summary>
+            倍率
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuDeal1">
+            <summary>
+            @comments 发牌1
+            @receive
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuDeal1.PokerFieldNumber">
+            <summary>Field number for the "poker" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuDeal1.Poker">
+            <summary>
+            牌
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuDeal1.BestTypeFieldNumber">
+            <summary>Field number for the "best_type" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuDeal1.BestType">
+            <summary>
+            最佳牌型
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuDeal1.BestPokersFieldNumber">
+            <summary>Field number for the "best_pokers" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuDeal1.BestPokers">
+            <summary>
+            最佳配牌
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuCommitPokers">
+            <summary>
+            @comments 提交配牌
+            @post
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuCommitPokers.PokersFieldNumber">
+            <summary>Field number for the "pokers" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuCommitPokers.Pokers">
+            <summary>
+            牌
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuRoundClear">
+            <summary>
+            @comments 小局清算
+            @receive
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoundClear.PlayersFieldNumber">
+            <summary>Field number for the "players" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuRoundClear.Players">
+            <summary>
+            结果
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoundClear.FinallyAtFieldNumber">
+            <summary>Field number for the "finally_at" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuRoundClear.FinallyAt">
+            <summary>
+            时间
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuRoundClear.Types">
+            <summary>Container for nested types declared in the NiuniuRoundClear message type.</summary>
+        </member>
+        <member name="T:CowProto.NiuniuRoundClear.Types.PlayerData">
+            <summary>
+            结算结果
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoundClear.Types.PlayerData.PlayerFieldNumber">
+            <summary>Field number for the "player" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuRoundClear.Types.PlayerData.Player">
+            <summary>
+            玩家
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoundClear.Types.PlayerData.PointsFieldNumber">
+            <summary>Field number for the "points" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuRoundClear.Types.PlayerData.Points">
+            <summary>
+            总分
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoundClear.Types.PlayerData.TypeFieldNumber">
+            <summary>Field number for the "type" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuRoundClear.Types.PlayerData.Type">
+            <summary>
+            牌型
+            boom 炸弹
+            full_house 葫芦
+            nn 牛牛
+            n[1-9] 牛1 - 牛9
+            n0 无牛
+            straight_flush 同花顺
+            flush 同花
+            straight 顺子
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoundClear.Types.PlayerData.WeightFieldNumber">
+            <summary>Field number for the "weight" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuRoundClear.Types.PlayerData.Weight">
+            <summary>
+            权重
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoundClear.Types.PlayerData.RateFieldNumber">
+            <summary>Field number for the "rate" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuRoundClear.Types.PlayerData.Rate">
+            <summary>
+            倍率
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoundClear.Types.PlayerData.ThisPointsFieldNumber">
+            <summary>Field number for the "this_points" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuRoundClear.Types.PlayerData.ThisPoints">
+            <summary>
+            得分
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuRoundClear.Types.PlayerData.PokersFieldNumber">
+            <summary>Field number for the "pokers" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuRoundClear.Types.PlayerData.Pokers">
+            <summary>
+            手牌
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuGameFinally">
+            <summary>
+            @comments 游戏清算
+            @receive
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuGameFinally.PlayersFieldNumber">
+            <summary>Field number for the "players" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuGameFinally.Players">
+            <summary>
+            结果
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuGameFinally.FinallyAtFieldNumber">
+            <summary>Field number for the "finally_at" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuGameFinally.FinallyAt">
+            <summary>
+            时间
+            </summary>
+        </member>
+        <member name="T:CowProto.NiuniuGameFinally.Types">
+            <summary>Container for nested types declared in the NiuniuGameFinally message type.</summary>
+        </member>
+        <member name="T:CowProto.NiuniuGameFinally.Types.PlayerData">
+            <summary>
+            结算结果
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuGameFinally.Types.PlayerData.PlayerFieldNumber">
+            <summary>Field number for the "player" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuGameFinally.Types.PlayerData.Player">
+            <summary>
+            玩家
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuGameFinally.Types.PlayerData.PointsFieldNumber">
+            <summary>Field number for the "points" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuGameFinally.Types.PlayerData.Points">
+            <summary>
+            总分
+            </summary>
+        </member>
+        <member name="F:CowProto.NiuniuGameFinally.Types.PlayerData.VictoriesFieldNumber">
+            <summary>Field number for the "victories" field.</summary>
+        </member>
+        <member name="P:CowProto.NiuniuGameFinally.Types.PlayerData.Victories">
+            <summary>
+            胜场
+            </summary>
+        </member>
+        <member name="T:CowProto.RedBagOption">
+            <summary>
+            @comments 红包配置
+            </summary>
+        </member>
+        <member name="F:CowProto.RedBagOption.MoneyFieldNumber">
+            <summary>Field number for the "money" field.</summary>
+        </member>
+        <member name="P:CowProto.RedBagOption.Money">
+            <summary>
+            金币数
+            </summary>
+        </member>
+        <member name="F:CowProto.RedBagOption.NumberFieldNumber">
+            <summary>Field number for the "number" field.</summary>
+        </member>
+        <member name="P:CowProto.RedBagOption.Number">
+            <summary>
+            人数
+            </summary>
+        </member>
+        <member name="F:CowProto.RedBagOption.MantissaFieldNumber">
+            <summary>Field number for the "mantissa" field.</summary>
+        </member>
+        <member name="P:CowProto.RedBagOption.Mantissa">
+            <summary>
+            尾数
+            </summary>
+        </member>
+        <member name="T:CowProto.RedCreateBag">
+            <summary>
+            @comments 创建红包
+            @post
+            </summary>
+        </member>
+        <member name="F:CowProto.RedCreateBag.OptionFieldNumber">
+            <summary>Field number for the "option" field.</summary>
+        </member>
+        <member name="P:CowProto.RedCreateBag.Option">
+            <summary>
+            配置
+            </summary>
+        </member>
+        <member name="T:CowProto.RedCreateBagFailed">
+            <summary>
+            @comments 红包创建失败
+            @receive
+            </summary>
+        </member>
+        <member name="F:CowProto.RedCreateBagFailed.ReasonFieldNumber">
+            <summary>Field number for the "reason" field.</summary>
+        </member>
+        <member name="P:CowProto.RedCreateBagFailed.Reason">
+            <summary>
+            原因
+             0 未知
+             1 金币不足
+            -1 非合法的配置
+            </summary>
+        </member>
+        <member name="T:CowProto.RedCreateBagSuccess">
+            <summary>
+            @comments 红包创建成功
+            @receive
+            </summary>
+        </member>
+        <member name="F:CowProto.RedCreateBagSuccess.IdFieldNumber">
+            <summary>Field number for the "id" field.</summary>
+        </member>
+        <member name="P:CowProto.RedCreateBagSuccess.Id">
+            <summary>
+            红包 ID
+            </summary>
+        </member>
+        <member name="T:CowProto.RedBag">
+            <summary>
+            @comments 红包
+            </summary>
+        </member>
+        <member name="F:CowProto.RedBag.IdFieldNumber">
+            <summary>Field number for the "id" field.</summary>
+        </member>
+        <member name="P:CowProto.RedBag.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="F:CowProto.RedBag.OptionFieldNumber">
+            <summary>Field number for the "option" field.</summary>
+        </member>
+        <member name="P:CowProto.RedBag.Option">
+            <summary>
+            配置
+            </summary>
+        </member>
+        <member name="F:CowProto.RedBag.CreatorFieldNumber">
+            <summary>Field number for the "creator" field.</summary>
+        </member>
+        <member name="P:CowProto.RedBag.Creator">
+            <summary>
+            创建者
+            </summary>
+        </member>
+        <member name="F:CowProto.RedBag.PlayersFieldNumber">
+            <summary>Field number for the "players" field.</summary>
+        </member>
+        <member name="P:CowProto.RedBag.Players">
+            <summary>
+            已抢红包玩家
+            </summary>
+        </member>
+        <member name="T:CowProto.RedUpdateBagList">
+            <summary>
+            @comments 红包列表
+            @receive
+            </summary>
+        </member>
+        <member name="F:CowProto.RedUpdateBagList.BagsFieldNumber">
+            <summary>Field number for the "bags" field.</summary>
+        </member>
+        <member name="P:CowProto.RedUpdateBagList.Bags">
+            <summary>
+            列表
+            </summary>
+        </member>
+        <member name="T:CowProto.RedGrab">
+            <summary>
+            @comments 抢红包
+            @post
+            </summary>
+        </member>
+        <member name="F:CowProto.RedGrab.IdFieldNumber">
+            <summary>Field number for the "id" field.</summary>
+        </member>
+        <member name="P:CowProto.RedGrab.Id">
+            <summary>
+            红包 ID
+            </summary>
+        </member>
+        <member name="T:CowProto.RedGrabFailed">
+            <summary>
+            @comments 抢红包失败
+            @receive
+            </summary>
+        </member>
+        <member name="F:CowProto.RedGrabFailed.ReasonFieldNumber">
+            <summary>Field number for the "reason" field.</summary>
+        </member>
+        <member name="P:CowProto.RedGrabFailed.Reason">
+            <summary>
+            原因
+            0 未知
+            1 红包不存在
+            2 金币不足
+            3 已被抢完
+            </summary>
+        </member>
+        <member name="T:CowProto.RedGrabSuccess">
+            <summary>
+            @comments 抢红包成功
+            @receive
+            </summary>
+        </member>
+        <member name="T:CowProto.RedLeave">
+            <summary>
+            @comments 离开当前红包
+            @post
+            </summary>
+        </member>
+        <member name="T:CowProto.RedDeadline">
+            <summary>
+            @comments 红包销毁时间
+            @receive
+            </summary>
+        </member>
+        <member name="F:CowProto.RedDeadline.StampFieldNumber">
+            <summary>Field number for the "stamp" field.</summary>
+        </member>
+        <member name="P:CowProto.RedDeadline.Stamp">
+            <summary>
+            时间戳
+            </summary>
+        </member>
+        <member name="T:CowProto.RedUpdateBag">
+            <summary>
+            @comments 红包详情刷新
+            @receive
+            </summary>
+        </member>
+        <member name="F:CowProto.RedUpdateBag.BagFieldNumber">
+            <summary>Field number for the "bag" field.</summary>
+        </member>
+        <member name="P:CowProto.RedUpdateBag.Bag">
+            <summary>
+            红包详情
+            </summary>
+        </member>
+        <member name="T:CowProto.RedBagClear">
+            <summary>
+            @comments 红包结算
+            </summary>
+        </member>
+        <member name="F:CowProto.RedBagClear.IdFieldNumber">
+            <summary>Field number for the "id" field.</summary>
+        </member>
+        <member name="P:CowProto.RedBagClear.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="F:CowProto.RedBagClear.OptionFieldNumber">
+            <summary>Field number for the "option" field.</summary>
+        </member>
+        <member name="P:CowProto.RedBagClear.Option">
+            <summary>
+            配置
+            </summary>
+        </member>
+        <member name="F:CowProto.RedBagClear.CreatorFieldNumber">
+            <summary>Field number for the "creator" field.</summary>
+        </member>
+        <member name="P:CowProto.RedBagClear.Creator">
+            <summary>
+            庄家
+            </summary>
+        </member>
+        <member name="F:CowProto.RedBagClear.PlayersFieldNumber">
+            <summary>Field number for the "players" field.</summary>
+        </member>
+        <member name="P:CowProto.RedBagClear.Players">
+            <summary>
+            已抢红包玩家
+            </summary>
+        </member>
+        <member name="F:CowProto.RedBagClear.UsedTimeFieldNumber">
+            <summary>Field number for the "used_time" field.</summary>
+        </member>
+        <member name="P:CowProto.RedBagClear.UsedTime">
+            <summary>
+            时长
+            </summary>
+        </member>
+        <member name="T:CowProto.RedBagClear.Types">
+            <summary>Container for nested types declared in the RedBagClear message type.</summary>
+        </member>
+        <member name="T:CowProto.RedBagClear.Types.CreatorData">
+            <summary>
+            庄家
+            </summary>
+        </member>
+        <member name="F:CowProto.RedBagClear.Types.CreatorData.PlayerFieldNumber">
+            <summary>Field number for the "player" field.</summary>
+        </member>
+        <member name="P:CowProto.RedBagClear.Types.CreatorData.Player">
+            <summary>
+            玩家
+            </summary>
+        </member>
+        <member name="F:CowProto.RedBagClear.Types.CreatorData.CostFieldNumber">
+            <summary>Field number for the "cost" field.</summary>
+        </member>
+        <member name="P:CowProto.RedBagClear.Types.CreatorData.Cost">
+            <summary>
+            支出
+            </summary>
+        </member>
+        <member name="F:CowProto.RedBagClear.Types.CreatorData.GetFieldNumber">
+            <summary>Field number for the "get" field.</summary>
+        </member>
+        <member name="P:CowProto.RedBagClear.Types.CreatorData.Get">
+            <summary>
+            赔付收入
+            </summary>
+        </member>
+        <member name="F:CowProto.RedBagClear.Types.CreatorData.ChargeFieldNumber">
+            <summary>Field number for the "charge" field.</summary>
+        </member>
+        <member name="P:CowProto.RedBagClear.Types.CreatorData.Charge">
+            <summary>
+            赔付收入的手续费
+            </summary>
+        </member>
+        <member name="T:CowProto.RedBagClear.Types.PlayerData">
+            <summary>
+            玩家
+            </summary>
+        </member>
+        <member name="F:CowProto.RedBagClear.Types.PlayerData.PlayerFieldNumber">
+            <summary>Field number for the "player" field.</summary>
+        </member>
+        <member name="P:CowProto.RedBagClear.Types.PlayerData.Player">
+            <summary>
+            玩家
+            </summary>
+        </member>
+        <member name="F:CowProto.RedBagClear.Types.PlayerData.GrabFieldNumber">
+            <summary>Field number for the "grab" field.</summary>
+        </member>
+        <member name="P:CowProto.RedBagClear.Types.PlayerData.Grab">
+            <summary>
+            收入
+            </summary>
+        </member>
+        <member name="F:CowProto.RedBagClear.Types.PlayerData.GrabAtFieldNumber">
+            <summary>Field number for the "grab_at" field.</summary>
+        </member>
+        <member name="P:CowProto.RedBagClear.Types.PlayerData.GrabAt">
+            <summary>
+            抢到红包的时间
+            </summary>
+        </member>
+        <member name="F:CowProto.RedBagClear.Types.PlayerData.CreatorFieldNumber">
+            <summary>Field number for the "creator" field.</summary>
+        </member>
+        <member name="P:CowProto.RedBagClear.Types.PlayerData.Creator">
+            <summary>
+            是否是创建者
+            </summary>
+        </member>
+        <member name="F:CowProto.RedBagClear.Types.PlayerData.PayFieldNumber">
+            <summary>Field number for the "pay" field.</summary>
+        </member>
+        <member name="P:CowProto.RedBagClear.Types.PlayerData.Pay">
+            <summary>
+            赔付支出
+            </summary>
+        </member>
+        <member name="F:CowProto.RedBagClear.Types.PlayerData.ChargeFieldNumber">
+            <summary>Field number for the "charge" field.</summary>
+        </member>
+        <member name="P:CowProto.RedBagClear.Types.PlayerData.Charge">
+            <summary>
+            收入的手续费
+            </summary>
+        </member>
+        <member name="T:CowProto.RedGetBagClearRequest">
+            <summary>
+            @comments 获取红包结果
+            @rpc response=RedGetBagClearResponse
+            </summary>
+        </member>
+        <member name="T:CowProto.RedGetBagClearResponse">
+            <summary>
+            @comments 获取红包结果
+            </summary>
+        </member>
+        <member name="F:CowProto.RedGetBagClearResponse.BagFieldNumber">
+            <summary>Field number for the "bag" field.</summary>
+        </member>
+        <member name="P:CowProto.RedGetBagClearResponse.Bag">
+            <summary>
+            结果
+            </summary>
+        </member>
+        <member name="T:CowProto.RedHandsBagSettled">
+            <summary>
+            @comments 已发红包结算
+            @receive
+            </summary>
+        </member>
+        <member name="F:CowProto.RedHandsBagSettled.BagFieldNumber">
+            <summary>Field number for the "bag" field.</summary>
+        </member>
+        <member name="P:CowProto.RedHandsBagSettled.Bag">
+            <summary>
+            结果
+            </summary>
+        </member>
+        <member name="T:CowProto.RedBagDestroyed">
+            <summary>
+            @comments 红包销毁
+            @receive
+            </summary>
+        </member>
+        <member name="F:CowProto.RedBagDestroyed.IdFieldNumber">
+            <summary>Field number for the "id" field.</summary>
+        </member>
+        <member name="T:CowProto.RedGetHistoryRequest">
+            <summary>
+            @comments 获取红包历史
+            @rpc response=RedGetHistoryResponse
+            </summary>
+        </member>
+        <member name="T:CowProto.RedGetHistoryResponse">
+            <summary>
+            @comments 获取红包历史结果
+            </summary>
+        </member>
+        <member name="F:CowProto.RedGetHistoryResponse.GrabsFieldNumber">
+            <summary>Field number for the "grabs" field.</summary>
+        </member>
+        <member name="P:CowProto.RedGetHistoryResponse.Grabs">
+            <summary>
+            我抢的
+            </summary>
+        </member>
+        <member name="F:CowProto.RedGetHistoryResponse.HandsFieldNumber">
+            <summary>Field number for the "hands" field.</summary>
+        </member>
+        <member name="P:CowProto.RedGetHistoryResponse.Hands">
+            <summary>
+            我发的
+            </summary>
+        </member>
+        <member name="T:CowProto.Lever28BagOption">
+            <summary>
+            @comments 红包配置
+            </summary>
+        </member>
+        <member name="F:CowProto.Lever28BagOption.MoneyFieldNumber">
+            <summary>Field number for the "money" field.</summary>
+        </member>
+        <member name="P:CowProto.Lever28BagOption.Money">
+            <summary>
+            金币数
+            </summary>
+        </member>
+        <member name="T:CowProto.Lever28CreateBag">
+            <summary>
+            @comments 创建红包
+            @post
+            </summary>
+        </member>
+        <member name="F:CowProto.Lever28CreateBag.OptionFieldNumber">
+            <summary>Field number for the "option" field.</summary>
+        </member>
+        <member name="P:CowProto.Lever28CreateBag.Option">
+            <summary>
+            配置
+            </summary>
+        </member>
+        <member name="T:CowProto.Lever28CreateBagFailed">
+            <summary>
+            @comments 红包创建失败
+            @receive
+            </summary>
+        </member>
+        <member name="F:CowProto.Lever28CreateBagFailed.ReasonFieldNumber">
+            <summary>Field number for the "reason" field.</summary>
+        </member>
+        <member name="P:CowProto.Lever28CreateBagFailed.Reason">
+            <summary>
+            原因
+            0 未知
+            1 金币不足
+            </summary>
+        </member>
+        <member name="T:CowProto.Lever28CreateBagSuccess">
+            <summary>
+            @comments 红包创建成功
+            @receive
+            </summary>
+        </member>
+        <member name="F:CowProto.Lever28CreateBagSuccess.IdFieldNumber">
+            <summary>Field number for the "id" field.</summary>
+        </member>
+        <member name="P:CowProto.Lever28CreateBagSuccess.Id">
+            <summary>
+            红包 ID
+            </summary>
+        </member>
+        <member name="T:CowProto.Lever28Bag">
+            <summary>
+            @comments 红包
+            </summary>
+        </member>
+        <member name="F:CowProto.Lever28Bag.IdFieldNumber">
+            <summary>Field number for the "id" field.</summary>
+        </member>
+        <member name="P:CowProto.Lever28Bag.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="F:CowProto.Lever28Bag.OptionFieldNumber">
+            <summary>Field number for the "option" field.</summary>
+        </member>
+        <member name="P:CowProto.Lever28Bag.Option">
+            <summary>
+            配置
+            </summary>
+        </member>
+        <member name="F:CowProto.Lever28Bag.CreatorFieldNumber">
+            <summary>Field number for the "creator" field.</summary>
+        </member>
+        <member name="P:CowProto.Lever28Bag.Creator">
+            <summary>
+            创建者
+            </summary>
+        </member>
+        <member name="F:CowProto.Lever28Bag.PlayersFieldNumber">
+            <summary>Field number for the "players" field.</summary>
+        </member>
+        <member name="P:CowProto.Lever28Bag.Players">
+            <summary>
+            已抢红包玩家
+            </summary>
+        </member>
+        <member name="T:CowProto.Lever28UpdateBagList">
+            <summary>
+            @comments 红包列表
+            @receive
+            </summary>
+        </member>
+        <member name="F:CowProto.Lever28UpdateBagList.BagsFieldNumber">
+            <summary>Field number for the "bags" field.</summary>
+        </member>
+        <member name="P:CowProto.Lever28UpdateBagList.Bags">
+            <summary>
+            列表
+            </summary>
+        </member>
+        <member name="T:CowProto.Lever28Grab">
+            <summary>
+            @comments 抢红包
+            @post
+            </summary>
+        </member>
+        <member name="F:CowProto.Lever28Grab.IdFieldNumber">
+            <summary>Field number for the "id" field.</summary>
+        </member>
+        <member name="P:CowProto.Lever28Grab.Id">
+            <summary>
+            红包 ID
+            </summary>
+        </member>
+        <member name="T:CowProto.Lever28GrabFailed">
+            <summary>
+            @comments 抢红包失败
+            @receive
+            </summary>
+        </member>
+        <member name="F:CowProto.Lever28GrabFailed.ReasonFieldNumber">
+            <summary>Field number for the "reason" field.</summary>
+        </member>
+        <member name="P:CowProto.Lever28GrabFailed.Reason">
+            <summary>
+            原因
+            0 未知
+            1 红包不存在
+            2 金币不足
+            3 已被抢完
+            </summary>
+        </member>
+        <member name="T:CowProto.Lever28GrabSuccess">
+            <summary>
+            @comments 抢红包成功
+            @receive
+            </summary>
+        </member>
+        <member name="T:CowProto.Lever28Leave">
+            <summary>
+            @comments 离开当前红包
+            @post
+            </summary>
+        </member>
+        <member name="T:CowProto.Lever28Deadline">
+            <summary>
+            @comments 红包销毁时间
+            @receive
+            </summary>
+        </member>
+        <member name="F:CowProto.Lever28Deadline.StampFieldNumber">
+            <summary>Field number for the "stamp" field.</summary>
+        </member>
+        <member name="P:CowProto.Lever28Deadline.Stamp">
+            <summary>
+            时间戳
+            </summary>
+        </member>
+        <member name="T:CowProto.Lever28UpdateBag">
+            <summary>
+            @comments 红包详情刷新
+            @receive
+            </summary>
+        </member>
+        <member name="F:CowProto.Lever28UpdateBag.BagFieldNumber">
+            <summary>Field number for the "bag" field.</summary>
+        </member>
+        <member name="P:CowProto.Lever28UpdateBag.Bag">
+            <summary>
+            红包详情
+            </summary>
+        </member>
+        <member name="T:CowProto.Lever28BagClear">
+            <summary>
+            @comments 红包结算
+            </summary>
+        </member>
+        <member name="F:CowProto.Lever28BagClear.IdFieldNumber">
+            <summary>Field number for the "id" field.</summary>
+        </member>
+        <member name="P:CowProto.Lever28BagClear.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="F:CowProto.Lever28BagClear.OptionFieldNumber">
+            <summary>Field number for the "option" field.</summary>
+        </member>
+        <member name="P:CowProto.Lever28BagClear.Option">
+            <summary>
+            配置
+            </summary>
+        </member>
+        <member name="F:CowProto.Lever28BagClear.PlayersFieldNumber">
+            <summary>Field number for the "players" field.</summary>
+        </member>
+        <member name="P:CowProto.Lever28BagClear.Players">
+            <summary>
+            已抢红包玩家
+            </summary>
+        </member>
+        <member name="F:CowProto.Lever28BagClear.UsedTimeFieldNumber">
+            <summary>Field number for the "used_time" field.</summary>
+        </member>
+        <member name="P:CowProto.Lever28BagClear.UsedTime">
+            <summary>
+            花费多长时间抢完
+            </summary>
+        </member>
+        <member name="T:CowProto.Lever28BagClear.Types">
+            <summary>Container for nested types declared in the Lever28BagClear message type.</summary>
+        </member>
+        <member name="T:CowProto.Lever28BagClear.Types.PlayerData">
+            <summary>
+            玩家
+            </summary>
+        </member>
+        <member name="F:CowProto.Lever28BagClear.Types.PlayerData.PlayerFieldNumber">
+            <summary>Field number for the "player" field.</summary>
+        </member>
+        <member name="P:CowProto.Lever28BagClear.Types.PlayerData.Player">
+            <summary>
+            玩家信息
+            </summary>
+        </member>
+        <member name="F:CowProto.Lever28BagClear.Types.PlayerData.GrabFieldNumber">
+            <summary>Field number for the "grab" field.</summary>
+        </member>
+        <member name="P:CowProto.Lever28BagClear.Types.PlayerData.Grab">
+            <summary>
+            抢到金币数
+            </summary>
+        </member>
+        <member name="F:CowProto.Lever28BagClear.Types.PlayerData.GrabChargeFieldNumber">
+            <summary>Field number for the "grab_charge" field.</summary>
+        </member>
+        <member name="P:CowProto.Lever28BagClear.Types.PlayerData.GrabCharge">
+            <summary>
+            抢到金币的手续费
+            </summary>
+        </member>
+        <member name="F:CowProto.Lever28BagClear.Types.PlayerData.PayFieldNumber">
+            <summary>Field number for the "pay" field.</summary>
+        </member>
+        <member name="P:CowProto.Lever28BagClear.Types.PlayerData.Pay">
+            <summary>
+            赔付金币数
+            </summary>
+        </member>
+        <member name="F:CowProto.Lever28BagClear.Types.PlayerData.GetFieldNumber">
+            <summary>Field number for the "get" field.</summary>
+        </member>
+        <member name="P:CowProto.Lever28BagClear.Types.PlayerData.Get">
+            <summary>
+            赢得金币数
+            </summary>
+        </member>
+        <member name="F:CowProto.Lever28BagClear.Types.PlayerData.GetChargeFieldNumber">
+            <summary>Field number for the "get_charge" field.</summary>
+        </member>
+        <member name="P:CowProto.Lever28BagClear.Types.PlayerData.GetCharge">
+            <summary>
+            赢得金币的手续费
+            </summary>
+        </member>
+        <member name="F:CowProto.Lever28BagClear.Types.PlayerData.MahjongFieldNumber">
+            <summary>Field number for the "mahjong" field.</summary>
+        </member>
+        <member name="P:CowProto.Lever28BagClear.Types.PlayerData.Mahjong">
+            <summary>
+            牌面
+            </summary>
+        </member>
+        <member name="F:CowProto.Lever28BagClear.Types.PlayerData.GrabAtFieldNumber">
+            <summary>Field number for the "grab_at" field.</summary>
+        </member>
+        <member name="P:CowProto.Lever28BagClear.Types.PlayerData.GrabAt">
+            <summary>
+            抢到红包的时间
+            </summary>
+        </member>
+        <member name="F:CowProto.Lever28BagClear.Types.PlayerData.CreatorFieldNumber">
+            <summary>Field number for the "creator" field.</summary>
+        </member>
+        <member name="P:CowProto.Lever28BagClear.Types.PlayerData.Creator">
+            <summary>
+            创建者
+            </summary>
+        </member>
+        <member name="T:CowProto.Lever28GetBagClearRequest">
+            <summary>
+            @comments 获取红包结果
+            @rpc response=Lever28GetBagClearResponse
+            </summary>
+        </member>
+        <member name="T:CowProto.Lever28GetBagClearResponse">
+            <summary>
+            @comments 获取红包结果
+            </summary>
+        </member>
+        <member name="F:CowProto.Lever28GetBagClearResponse.BagFieldNumber">
+            <summary>Field number for the "bag" field.</summary>
+        </member>
+        <member name="P:CowProto.Lever28GetBagClearResponse.Bag">
+            <summary>
+            结果
+            </summary>
+        </member>
+        <member name="T:CowProto.Lever28BagDestroyed">
+            <summary>
+            @comments 红包销毁
+            @receive
+            </summary>
+        </member>
+        <member name="F:CowProto.Lever28BagDestroyed.IdFieldNumber">
+            <summary>Field number for the "id" field.</summary>
+        </member>
+        <member name="T:CowProto.Lever28GetHistoryRequest">
+            <summary>
+            @comments 获取红包历史
+            @rpc response=Lever28GetHistoryResponse
+            </summary>
+        </member>
+        <member name="T:CowProto.Lever28GetHistoryResponse">
+            <summary>
+            @comments 获取红包历史结果
+            </summary>
+        </member>
+        <member name="F:CowProto.Lever28GetHistoryResponse.GrabsFieldNumber">
+            <summary>Field number for the "grabs" field.</summary>
+        </member>
+        <member name="P:CowProto.Lever28GetHistoryResponse.Grabs">
+            <summary>
+            我抢的
+            </summary>
+        </member>
+        <member name="F:CowProto.Lever28GetHistoryResponse.HandsFieldNumber">
+            <summary>Field number for the "hands" field.</summary>
+        </member>
+        <member name="P:CowProto.Lever28GetHistoryResponse.Hands">
+            <summary>
+            我发的
+            </summary>
+        </member>
+        <member name="T:CowProto.GomokuCreateRoom">
+            <summary>
+            @comments 创建房间
+            @post
+            </summary>
+        </member>
+        <member name="T:CowProto.GomokuCreateRoomFailed">
+            <summary>
+            @comments 创建房间失败
+            @receive
+            </summary>
+        </member>
+        <member name="F:CowProto.GomokuCreateRoomFailed.ReasonFieldNumber">
+            <summary>Field number for the "reason" field.</summary>
+        </member>
+        <member name="P:CowProto.GomokuCreateRoomFailed.Reason">
+            <summary>
+            原因
+             0 未知
+            -1 玩家已进入房间
+            </summary>
+        </member>
+        <member name="T:CowProto.GomokuCreateRoomSuccess">
+            <summary>
+            @comments 房间创建成功
+            @receive
+            </summary>
+        </member>
+        <member name="F:CowProto.GomokuCreateRoomSuccess.RoomIdFieldNumber">
+            <summary>Field number for the "room_id" field.</summary>
+        </member>
+        <member name="P:CowProto.GomokuCreateRoomSuccess.RoomId">
+            <summary>
+            房间 ID
+            </summary>
+        </member>
+        <member name="T:CowProto.GomokuJoinRoom">
+            <summary>
+            @comments 加入房间
+            @post
+            </summary>
+        </member>
+        <member name="F:CowProto.GomokuJoinRoom.RoomIdFieldNumber">
+            <summary>Field number for the "room_id" field.</summary>
+        </member>
+        <member name="P:CowProto.GomokuJoinRoom.RoomId">
+            <summary>
+            房间 ID
+            </summary>
+        </member>
+        <member name="T:CowProto.GomokuJoinRoomFailed">
+            <summary>
+            @comments 加入房间失败
+            @receive
+            </summary>
+        </member>
+        <member name="F:CowProto.GomokuJoinRoomFailed.ReasonFieldNumber">
+            <summary>Field number for the "reason" field.</summary>
+        </member>
+        <member name="P:CowProto.GomokuJoinRoomFailed.Reason">
+            <summary>
+            原因
+             0 未知
+             1 房间不存在
+             2 房间已满员
+            -1 玩家已进入房间
+            </summary>
+        </member>
+        <member name="T:CowProto.GomokuJoinRoomSuccess">
+            <summary>
+            @comments 已进入房间
+            @receive
+            </summary>
+        </member>
+        <member name="T:CowProto.GomokuSetCost">
+            <summary>
+            @comments 设置学费
+            @post
+            </summary>
+        </member>
+        <member name="F:CowProto.GomokuSetCost.CostFieldNumber">
+            <summary>Field number for the "cost" field.</summary>
+        </member>
+        <member name="T:CowProto.GomokuSetRoomCostFailed">
+            <summary>
+            @comments 设置学费失败
+            @receive
+            </summary>
+        </member>
+        <member name="F:CowProto.GomokuSetRoomCostFailed.ReasonFieldNumber">
+            <summary>Field number for the "reason" field.</summary>
+        </member>
+        <member name="P:CowProto.GomokuSetRoomCostFailed.Reason">
+            <summary>
+            原因
+             0 未知
+             1 数额不合法
+             2 金币不足
+            -1 玩家未在房间
+            -2 没有权限
+            </summary>
+        </member>
+        <member name="T:CowProto.GomokuRoom">
+            <summary>
+            @comments 房间信息
+            </summary>
+        </member>
+        <member name="F:CowProto.GomokuRoom.IdFieldNumber">
+            <summary>Field number for the "id" field.</summary>
+        </member>
+        <member name="P:CowProto.GomokuRoom.Id">
+            <summary>
+            房间 ID
+            </summary>
+        </member>
+        <member name="F:CowProto.GomokuRoom.CreatorFieldNumber">
+            <summary>Field number for the "creator" field.</summary>
+        </member>
+        <member name="P:CowProto.GomokuRoom.Creator">
+            <summary>
+            创建者
+            </summary>
+        </member>
+        <member name="F:CowProto.GomokuRoom.StudentFieldNumber">
+            <summary>Field number for the "student" field.</summary>
+        </member>
+        <member name="P:CowProto.GomokuRoom.Student">
+            <summary>
+            学生
+            </summary>
+        </member>
+        <member name="F:CowProto.GomokuRoom.CostFieldNumber">
+            <summary>Field number for the "cost" field.</summary>
+        </member>
+        <member name="P:CowProto.GomokuRoom.Cost">
+            <summary>
+            学费
+            </summary>
+        </member>
+        <member name="T:CowProto.GomokuUpdateRoom">
+            <summary>
+            @comments 更新房间信息
+            @receive
+            </summary>
+        </member>
+        <member name="F:CowProto.GomokuUpdateRoom.RoomFieldNumber">
+            <summary>Field number for the "room" field.</summary>
+        </member>
+        <member name="P:CowProto.GomokuUpdateRoom.Room">
+            <summary>
+            房间
+            </summary>
+        </member>
+        <member name="T:CowProto.GomokuLeave">
+            <summary>
+            @comments 离开房间
+            @post
+            </summary>
+        </member>
+        <member name="T:CowProto.GomokuDismiss">
+            <summary>
+            @comments 解散房间
+            @post
+            </summary>
+        </member>
+        <member name="T:CowProto.GomokuLeft">
+            <summary>
+            @comments 已离开房间
+            @receive
+            </summary>
+        </member>
+        <member name="F:CowProto.GomokuLeft.ReasonFieldNumber">
+            <summary>Field number for the "reason" field.</summary>
+        </member>
+        <member name="P:CowProto.GomokuLeft.Reason">
+            <summary>
+            原因
+            0 未知
+            1 解散
+            2 主动离开
+            </summary>
+        </member>
+        <member name="T:CowProto.GomokuStart">
+            <summary>
+            @comments 开始游戏
+            @post
+            </summary>
+        </member>
+        <member name="T:CowProto.GomokuStarted">
+            <summary>
+            @comments 游戏已开始
+            @receive
+            </summary>
+        </member>
+        <member name="T:CowProto.GomokuUpdateRound">
+            <summary>
+            @comments 更新回合
+            @receive
+            </summary>
+        </member>
+        <member name="F:CowProto.GomokuUpdateRound.RoundNumberFieldNumber">
+            <summary>Field number for the "round_number" field.</summary>
+        </member>
+        <member name="P:CowProto.GomokuUpdateRound.RoundNumber">
+            <summary>
+            回合数
+            </summary>
+        </member>
+        <member name="F:CowProto.GomokuUpdateRound.BoardFieldNumber">
+            <summary>Field number for the "board" field.</summary>
+        </member>
+        <member name="P:CowProto.GomokuUpdateRound.Board">
+            <summary>
+            盘面
+            15 * 15
+            </summary>
+        </member>
+        <member name="T:CowProto.GomokuRequirePlay">
+            <summary>
+            @comments 走棋
+            @receive
+            </summary>
+        </member>
+        <member name="F:CowProto.GomokuRequirePlay.IsFieldNumber">
+            <summary>Field number for the "is" field.</summary>
+        </member>
+        <member name="P:CowProto.GomokuRequirePlay.Is">
+            <summary>
+            是否自己走棋
+            </summary>
+        </member>
+        <member name="T:CowProto.GomokuUpdatePlayDeadline">
+            <summary>
+            @comments 走棋倒计时
+            @receive
+            </summary>
+        </member>
+        <member name="F:CowProto.GomokuUpdatePlayDeadline.StampFieldNumber">
+            <summary>Field number for the "stamp" field.</summary>
+        </member>
+        <member name="P:CowProto.GomokuUpdatePlayDeadline.Stamp">
+            <summary>
+            时间戳
+            </summary>
+        </member>
+        <member name="F:CowProto.GomokuUpdatePlayDeadline.IsFieldNumber">
+            <summary>Field number for the "is" field.</summary>
+        </member>
+        <member name="P:CowProto.GomokuUpdatePlayDeadline.Is">
+            <summary>
+            是否是自己
+            </summary>
+        </member>
+        <member name="T:CowProto.GomokuPlay">
+            <summary>
+            @comments 走棋
+            @post
+            </summary>
+        </member>
+        <member name="F:CowProto.GomokuPlay.XFieldNumber">
+            <summary>Field number for the "x" field.</summary>
+        </member>
+        <member name="P:CowProto.GomokuPlay.X">
+            <summary>
+            15 * 15
+            1 - 15
+            </summary>
+        </member>
+        <member name="F:CowProto.GomokuPlay.YFieldNumber">
+            <summary>Field number for the "y" field.</summary>
+        </member>
+        <member name="T:CowProto.GomokuSurrender">
+            <summary>
+            @comments 认输
+            @post
+            </summary>
+        </member>
+        <member name="T:CowProto.GomokuVictory">
+            <summary>
+            @comments 你赢了
+            @receive
+            </summary>
+        </member>
+        <member name="T:CowProto.GomokuLost">
+            <summary>
+            @comments 你输了
+            @receive
+            </summary>
+        </member>
+        <member name="T:CowProto.GomokuHistory">
+            <summary>
+            @comments 五子棋战绩
+            </summary>
+        </member>
+        <member name="F:CowProto.GomokuHistory.PlayerIdFieldNumber">
+            <summary>Field number for the "player_id" field.</summary>
+        </member>
+        <member name="P:CowProto.GomokuHistory.PlayerId">
+            <summary>
+            对手玩家
+            </summary>
+        </member>
+        <member name="F:CowProto.GomokuHistory.CostFieldNumber">
+            <summary>Field number for the "cost" field.</summary>
+        </member>
+        <member name="P:CowProto.GomokuHistory.Cost">
+            <summary>
+            学费
+            </summary>
+        </member>
+        <member name="F:CowProto.GomokuHistory.CreatedAtFieldNumber">
+            <summary>Field number for the "created_at" field.</summary>
+        </member>
+        <member name="P:CowProto.GomokuHistory.CreatedAt">
+            <summary>
+            时间
+            </summary>
+        </member>
+        <member name="T:CowProto.GomokuGetHistoryRequest">
+            <summary>
+            @comments 查询五子棋战绩请求
+            @rpc response=GomokuGetHistoryResponse
+            </summary>
+        </member>
+        <member name="T:CowProto.GomokuGetHistoryResponse">
+            <summary>
+            @comments 查询五子棋战绩结果
+            </summary>
+        </member>
+        <member name="F:CowProto.GomokuGetHistoryResponse.HistoriesFieldNumber">
+            <summary>Field number for the "histories" field.</summary>
+        </member>
+        <member name="P:CowProto.GomokuGetHistoryResponse.Histories">
+            <summary>
+            结果
+            </summary>
+        </member>
+        <member name="T:CowProto.CowProtoMetaProvider">
+            <summary>
+            cow.proto 元数据提供者
+            </summary>
+        </member>
+        <member name="M:CowProto.CowProtoMetaProvider.RegisterAll">
+            <summary>
+            注册消息
+            </summary>
+        </member>
+        <member name="T:WakaSDK.IDispatcher">
+            <summary>
+            消息分发器接口
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.Connected">
+            <summary>
+            连接建立
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.ConnectFailed">
+            <summary>
+            连接失败
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.Closed">
+            <summary>
+            连接断开
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventWelcome(CowProto.Welcome)">
+            <summary>
+            推送信息
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventLoginFailed(CowProto.LoginFailed)">
+            <summary>
+            登录失败
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventLoginSuccess(CowProto.LoginSuccess)">
+            <summary>
+            登录成功
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventHallEntered(CowProto.HallEntered)">
+            <summary>
+            已经进入大厅
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventPlayerNumber(CowProto.PlayerNumber)">
+            <summary>
+            在线人数
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventRecover(CowProto.Recover)">
+            <summary>
+            是否需要恢复游戏
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventNiuniuCreateRoomFailed(CowProto.NiuniuCreateRoomFailed)">
+            <summary>
+            创建房间失败
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventNiuniuCreateRoomSuccess(CowProto.NiuniuCreateRoomSuccess)">
+            <summary>
+            房间被创建
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventNiuniuJoinRoomFailed(CowProto.NiuniuJoinRoomFailed)">
+            <summary>
+            加入房间失败
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventNiuniuJoinRoomSuccess(CowProto.NiuniuJoinRoomSuccess)">
+            <summary>
+            已加入房间
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventNiuniuLeftRoom(CowProto.NiuniuLeftRoom)">
+            <summary>
+            离开了房间
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventNiuniuUpdateRoom(CowProto.NiuniuUpdateRoom)">
+            <summary>
+            房间状态更新
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventNiuniuGameStarted(CowProto.NiuniuGameStarted)">
+            <summary>
+            游戏开始
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventNiuniuRoundStarted(CowProto.NiuniuRoundStarted)">
+            <summary>
+            回合开始
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventNiuniuDeadline(CowProto.NiuniuDeadline)">
+            <summary>
+            操作结束时间
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventNiuniuUpdateRound(CowProto.NiuniuUpdateRound)">
+            <summary>
+            游戏状态更新
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventNiuniuRequireSpecifyBanker(CowProto.NiuniuRequireSpecifyBanker)">
+            <summary>
+            要求选择庄家
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventNiuniuRequireGrab(CowProto.NiuniuRequireGrab)">
+            <summary>
+            要求抢庄
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventNiuniuRequireGrabShow(CowProto.NiuniuRequireGrabShow)">
+            <summary>
+            要求播放抢庄动画
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventNiuniuDeal4(CowProto.NiuniuDeal4)">
+            <summary>
+            发牌4
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventNiuniuRequireSpecifyRate(CowProto.NiuniuRequireSpecifyRate)">
+            <summary>
+            要求闲家选择倍率
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventNiuniuDeal1(CowProto.NiuniuDeal1)">
+            <summary>
+            发牌1
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventNiuniuRoundClear(CowProto.NiuniuRoundClear)">
+            <summary>
+            小局清算
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventNiuniuGameFinally(CowProto.NiuniuGameFinally)">
+            <summary>
+            游戏清算
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventRedCreateBagFailed(CowProto.RedCreateBagFailed)">
+            <summary>
+            红包创建失败
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventRedCreateBagSuccess(CowProto.RedCreateBagSuccess)">
+            <summary>
+            红包创建成功
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventRedUpdateBagList(CowProto.RedUpdateBagList)">
+            <summary>
+            红包列表
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventRedGrabFailed(CowProto.RedGrabFailed)">
+            <summary>
+            抢红包失败
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventRedGrabSuccess(CowProto.RedGrabSuccess)">
+            <summary>
+            抢红包成功
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventRedDeadline(CowProto.RedDeadline)">
+            <summary>
+            红包销毁时间
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventRedUpdateBag(CowProto.RedUpdateBag)">
+            <summary>
+            红包详情刷新
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventRedHandsBagSettled(CowProto.RedHandsBagSettled)">
+            <summary>
+            已发红包结算
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventRedBagDestroyed(CowProto.RedBagDestroyed)">
+            <summary>
+            红包销毁
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventLever28CreateBagFailed(CowProto.Lever28CreateBagFailed)">
+            <summary>
+            红包创建失败
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventLever28CreateBagSuccess(CowProto.Lever28CreateBagSuccess)">
+            <summary>
+            红包创建成功
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventLever28UpdateBagList(CowProto.Lever28UpdateBagList)">
+            <summary>
+            红包列表
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventLever28GrabFailed(CowProto.Lever28GrabFailed)">
+            <summary>
+            抢红包失败
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventLever28GrabSuccess(CowProto.Lever28GrabSuccess)">
+            <summary>
+            抢红包成功
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventLever28Deadline(CowProto.Lever28Deadline)">
+            <summary>
+            红包销毁时间
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventLever28UpdateBag(CowProto.Lever28UpdateBag)">
+            <summary>
+            红包详情刷新
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventLever28BagDestroyed(CowProto.Lever28BagDestroyed)">
+            <summary>
+            红包销毁
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventGomokuCreateRoomFailed(CowProto.GomokuCreateRoomFailed)">
+            <summary>
+            创建房间失败
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventGomokuCreateRoomSuccess(CowProto.GomokuCreateRoomSuccess)">
+            <summary>
+            房间创建成功
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventGomokuJoinRoomFailed(CowProto.GomokuJoinRoomFailed)">
+            <summary>
+            加入房间失败
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventGomokuJoinRoomSuccess(CowProto.GomokuJoinRoomSuccess)">
+            <summary>
+            已进入房间
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventGomokuSetRoomCostFailed(CowProto.GomokuSetRoomCostFailed)">
+            <summary>
+            设置学费失败
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventGomokuUpdateRoom(CowProto.GomokuUpdateRoom)">
+            <summary>
+            更新房间信息
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventGomokuLeft(CowProto.GomokuLeft)">
+            <summary>
+            已离开房间
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventGomokuStarted(CowProto.GomokuStarted)">
+            <summary>
+            游戏已开始
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventGomokuUpdateRound(CowProto.GomokuUpdateRound)">
+            <summary>
+            更新回合
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventGomokuRequirePlay(CowProto.GomokuRequirePlay)">
+            <summary>
+            走棋
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventGomokuUpdatePlayDeadline(CowProto.GomokuUpdatePlayDeadline)">
+            <summary>
+            走棋倒计时
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventGomokuVictory(CowProto.GomokuVictory)">
+            <summary>
+            你赢了
+            </summary>
+        </member>
+        <member name="M:WakaSDK.IDispatcher.EventGomokuLost(CowProto.GomokuLost)">
+            <summary>
+            你输了
+            </summary>
+        </member>
+        <member name="T:WakaSDK.Supervisor">
+            <summary>
+            处理器
+            </summary>
+            <summary>
+            SDK接口
+            </summary>
+        </member>
+        <member name="M:WakaSDK.Supervisor.RequestSetPlayerExt(CowProto.SetPlayerExtRequest,System.Action{System.String,CowProto.SetPlayerExtResponse})">
+            <summary>
+            设置玩家附加信息请求
+            </summary>
+        </member>
+        <member name="M:WakaSDK.Supervisor.RequestSetPlayerSupervisor(CowProto.SetPlayerSupervisorRequest,System.Action{System.String,CowProto.SetPlayerSupervisorResponse})">
+            <summary>
+            设置上级代理
+            </summary>
+        </member>
+        <member name="M:WakaSDK.Supervisor.RequestGetMy(CowProto.GetMyRequest,System.Action{System.String,CowProto.GetMyResponse})">
+            <summary>
+            拉取账号信息
+            </summary>
+        </member>
+        <member name="M:WakaSDK.Supervisor.RequestGetPlayer(CowProto.GetPlayerRequest,System.Action{System.String,CowProto.GetPlayerResponse})">
+            <summary>
+            拉取玩家公开信息
+            </summary>
+        </member>
+        <member name="M:WakaSDK.Supervisor.RequestNiuniuQueryPayForAnotherRoomList(CowProto.NiuniuQueryPayForAnotherRoomListRequest,System.Action{System.String,CowProto.NiuniuQueryPayForAnotherRoomListResponse})">
+            <summary>
+            查询代开房间
+            </summary>
+        </member>
+        <member name="M:WakaSDK.Supervisor.RequestNiuniuQueryFlowingRoomList(CowProto.NiuniuQueryFlowingRoomListRequest,System.Action{System.String,CowProto.NiuniuQueryFlowingRoomListResponse})">
+            <summary>
+            查询流水房间
+            </summary>
+        </member>
+        <member name="M:WakaSDK.Supervisor.RequestNiuniuQueryHistory(CowProto.NiuniuQueryHistoryRequest,System.Action{System.String,CowProto.NiuniuQueryHistoryResponse})">
+            <summary>
+            查询战绩
+            </summary>
+        </member>
+        <member name="M:WakaSDK.Supervisor.RequestRedGetBagClear(CowProto.RedGetBagClearRequest,System.Action{System.String,CowProto.RedGetBagClearResponse})">
+            <summary>
+            获取红包结果
+            </summary>
+        </member>
+        <member name="M:WakaSDK.Supervisor.RequestRedGetHistory(CowProto.RedGetHistoryRequest,System.Action{System.String,CowProto.RedGetHistoryResponse})">
+            <summary>
+            获取红包历史
+            </summary>
+        </member>
+        <member name="M:WakaSDK.Supervisor.RequestLever28GetBagClear(CowProto.Lever28GetBagClearRequest,System.Action{System.String,CowProto.Lever28GetBagClearResponse})">
+            <summary>
+            获取红包结果
+            </summary>
+        </member>
+        <member name="M:WakaSDK.Supervisor.RequestLever28GetHistory(CowProto.Lever28GetHistoryRequest,System.Action{System.String,CowProto.Lever28GetHistoryResponse})">
+            <summary>
+            获取红包历史
+            </summary>
+        </member>
+        <member name="M:WakaSDK.Supervisor.RequestGomokuGetHistory(CowProto.GomokuGetHistoryRequest,System.Action{System.String,CowProto.GomokuGetHistoryResponse})">
+            <summary>
+            查询五子棋战绩请求
+            </summary>
+        </member>
+        <member name="M:WakaSDK.Supervisor.PostWechatLogin(CowProto.WechatLogin)">
+            <summary>
+            微信登录请求
+            </summary>
+        </member>
+        <member name="M:WakaSDK.Supervisor.PostTokenLogin(CowProto.TokenLogin)">
+            <summary>
+            令牌登录请求
+            </summary>
+        </member>
+        <member name="M:WakaSDK.Supervisor.PostNiuniuCreateRoom(CowProto.NiuniuCreateRoom)">
+            <summary>
+            创建房间
+            </summary>
+        </member>
+        <member name="M:WakaSDK.Supervisor.PostNiuniuJoinRoom(CowProto.NiuniuJoinRoom)">
+            <summary>
+            加入房间
+            </summary>
+        </member>
+        <member name="M:WakaSDK.Supervisor.PostNiuniuDismiss(CowProto.NiuniuDismiss)">
+            <summary>
+            解散房间
+            </summary>
+        </member>
+        <member name="M:WakaSDK.Supervisor.PostNiuniuLeaveRoom(CowProto.NiuniuLeaveRoom)">
+            <summary>
+            请求离开房间
+            </summary>
+        </member>
+        <member name="M:WakaSDK.Supervisor.PostNiuniuSwitchReady(CowProto.NiuniuSwitchReady)">
+            <summary>
+            切换准备/取消
+            </summary>
+        </member>
+        <member name="M:WakaSDK.Supervisor.PostNiuniuStart(CowProto.NiuniuStart)">
+            <summary>
+            开始游戏
+            </summary>
+        </member>
+        <member name="M:WakaSDK.Supervisor.PostNiuniuContinueWith(CowProto.NiuniuContinueWith)">
+            <summary>
+            继续
+            </summary>
+        </member>
+        <member name="M:WakaSDK.Supervisor.PostNiuniuSpecifyBanker(CowProto.NiuniuSpecifyBanker)">
+            <summary>
+            选择庄家
+            </summary>
+        </member>
+        <member name="M:WakaSDK.Supervisor.PostNiuniuGrab(CowProto.NiuniuGrab)">
+            <summary>
+            抢庄
+            </summary>
+        </member>
+        <member name="M:WakaSDK.Supervisor.PostNiuniuSpecifyRate(CowProto.NiuniuSpecifyRate)">
+            <summary>
+            闲家选择倍率
+            </summary>
+        </member>
+        <member name="M:WakaSDK.Supervisor.PostNiuniuCommitPokers(CowProto.NiuniuCommitPokers)">
+            <summary>
+            提交配牌
+            </summary>
+        </member>
+        <member name="M:WakaSDK.Supervisor.PostRedCreateBag(CowProto.RedCreateBag)">
+            <summary>
+            创建红包
+            </summary>
+        </member>
+        <member name="M:WakaSDK.Supervisor.PostRedGrab(CowProto.RedGrab)">
+            <summary>
+            抢红包
+            </summary>
+        </member>
+        <member name="M:WakaSDK.Supervisor.PostRedLeave(CowProto.RedLeave)">
+            <summary>
+            离开当前红包
+            </summary>
+        </member>
+        <member name="M:WakaSDK.Supervisor.PostLever28CreateBag(CowProto.Lever28CreateBag)">
+            <summary>
+            创建红包
+            </summary>
+        </member>
+        <member name="M:WakaSDK.Supervisor.PostLever28Grab(CowProto.Lever28Grab)">
+            <summary>
+            抢红包
+            </summary>
+        </member>
+        <member name="M:WakaSDK.Supervisor.PostLever28Leave(CowProto.Lever28Leave)">
+            <summary>
+            离开当前红包
+            </summary>
+        </member>
+        <member name="M:WakaSDK.Supervisor.PostGomokuCreateRoom(CowProto.GomokuCreateRoom)">
+            <summary>
+            创建房间
+            </summary>
+        </member>
+        <member name="M:WakaSDK.Supervisor.PostGomokuJoinRoom(CowProto.GomokuJoinRoom)">
+            <summary>
+            加入房间
+            </summary>
+        </member>
+        <member name="M:WakaSDK.Supervisor.PostGomokuSetCost(CowProto.GomokuSetCost)">
+            <summary>
+            设置学费
+            </summary>
+        </member>
+        <member name="M:WakaSDK.Supervisor.PostGomokuLeave(CowProto.GomokuLeave)">
+            <summary>
+            离开房间
+            </summary>
+        </member>
+        <member name="M:WakaSDK.Supervisor.PostGomokuDismiss(CowProto.GomokuDismiss)">
+            <summary>
+            解散房间
+            </summary>
+        </member>
+        <member name="M:WakaSDK.Supervisor.PostGomokuStart(CowProto.GomokuStart)">
+            <summary>
+            开始游戏
+            </summary>
+        </member>
+        <member name="M:WakaSDK.Supervisor.PostGomokuPlay(CowProto.GomokuPlay)">
+            <summary>
+            走棋
+            </summary>
+        </member>
+        <member name="M:WakaSDK.Supervisor.PostGomokuSurrender(CowProto.GomokuSurrender)">
+            <summary>
+            认输
+            </summary>
+        </member>
+        <member name="M:WakaSDK.Supervisor.SetDispatcher(WakaSDK.IDispatcher)">
+            <summary>
+            设置推送消息处理器
+            </summary>
+            <param name="dispatcher">用户定义的处理器对象</param>
+        </member>
+        <member name="M:WakaSDK.Supervisor.Connect(System.String,System.Int32)">
+            <summary>
+            连接服务器
+            </summary>
+            <param name="host"></param>
+            <param name="port"></param>
+        </member>
+        <member name="M:WakaSDK.Supervisor.Close">
+            <summary>
+            关闭连接
+            </summary>
+        </member>
+        <member name="M:WakaSDK.Supervisor.Loop">
+            <summary>
+            处理委托队列
+            </summary>
+        </member>
+    </members>
+</doc>
