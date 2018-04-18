@@ -45,7 +45,7 @@ public partial class Login : MonoBehaviour
 
     private void SaveEventWelcome(Welcome ev)
     {
-        Model.Instance.Welcome = ev;
+        Model.Welcome = ev;
     }
 
     private void SaveToken(string token)
@@ -79,7 +79,7 @@ public partial class Login : MonoBehaviour
     private void ShowLogin()
     {
         ShowWechatLogin();
-        if (Model.Instance.Welcome.Exts["ios"] == "true")
+        if (Model.Exts.Ios)
         {
             ShowVisitorLogin();
         }
